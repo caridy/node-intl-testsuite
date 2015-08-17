@@ -1,0 +1,33 @@
+{
+  "name": "node-intl-test262",
+  "version": "1.0.0",
+  "description": "Testsuites to run Intl tests in Node",
+  "private": true,
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-curl": "^2.1.0",
+    "grunt-zip": "^0.16.2",
+    "test262-harness": "^1.5.5"
+  },
+  "scripts": {
+    "test": "node noderunner.js",
+    "test2": "test262-harness -c config.js ./tmp/test262-master/test/intl402/**/*.js",
+    "build": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caridy/node-intl-test262.js"
+  },
+  "keywords": [
+    "intl",
+    "i18n",
+    "internationalization",
+    "ecma402",
+    "testsuite"
+  ],
+  "bugs": {
+    "url": "https://github.com/caridy/node-intl-test262/issues"
+  }
+}
